@@ -1,6 +1,9 @@
 .main-wrapper{
     background-color:rgb(144, 177, 115);
 }
+.topbar{
+    background-color:rgb(201, 225, 181);
+}
 .size{
     width: 800px;
     height: 800px;
@@ -17,6 +20,15 @@
     align-items: center;
     color: whitesmoke;
     cursor: pointer;
+}
+.square.uno{
+    width: calc(100% / 10);
+}
+.square.due{
+    width: calc(100% / 9);
+}
+.square.tre{
+    width: calc(100% / 7);
 }
 .square span {
     display: none;
