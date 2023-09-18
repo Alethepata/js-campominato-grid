@@ -1,11 +1,16 @@
-console.log('ciao');
 const container = document.querySelector('.container');
+
+const btn = document.getElementById('btn');
+
+container.classList.add('d-none');
 
 for( let i = 1; i <= 100; i++){
     const square = createSquare(i);
 
     square.addEventListener('click', function(){
+
         this.classList.toggle('active');
+
     })
 
     container.append(square);
@@ -13,7 +18,19 @@ for( let i = 1; i <= 100; i++){
 
 function createSquare(index){
     const squares = document.createElement('div');
+
     squares.className = 'square';
+
     squares.innerHTML = `<span>${index}</span>`;
+
     return squares;
+
 }
+
+btn.addEventListener('click', function(){
+
+    container.classList.remove('d-none'); 
+
+    btn.classList.add('d-none'); 
+    
+})
