@@ -5,11 +5,25 @@
     width: 800px;
     height: 800px;
     
+    
 }
-
 .square{
     width: calc(100% / 10);
     aspect-ratio: 1 / 1;
-    border: 2px solid rgb(144, 177, 115);
     background-color:rgb(108, 125, 92);
+    border: 2px solid rgb(144, 177, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.square span {
+    display: none;
+}
+.square.active {
+    background-color: rgb(100, 207, 7);
+}
+.square.active span {
+    display: block;
 }
