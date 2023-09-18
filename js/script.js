@@ -4,15 +4,10 @@ const inputLevel = document.getElementById('input-level');
 let level = inputLevel.value;
 
 const btn = document.getElementById('btn');
+const btn2 = document.getElementById('btn-2');
 
 container.classList.add('d-none');
 
-btn.addEventListener('click', function(){
-
-    container.classList.remove('d-none'); 
-
-
-})
 
 if(level == 'Easy'){
     for( let i = 1; i <= 100; i++){
@@ -86,9 +81,19 @@ function createSquare(index){
 
 }
 
- }
+}
 
+btn.addEventListener('click', function(){
 
+    container.classList.remove('d-none'); 
+
+})
+
+btn2.addEventListener('click', function(){
+
+    container.classList.add('d-none');
+
+})
 
 
 
